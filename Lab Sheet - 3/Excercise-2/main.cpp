@@ -14,14 +14,20 @@ int main()
 
     for (int i = 0; i < 5; i++) {
 
-        cout << "Enter student " + i + " mark 1 : ";
+        cout << "Enter student " << i + 1 << " mark 1 : ";
         cin >> marks1[i];
 
-        cout << "Enter student " + i + " mark 2 : ";
+        cout << "Enter student " << i + 1 << " mark 2 : ";
         cin >> marks2[i];
 
-        findMarks (marks1, marks2, CA1, CA2);
+        findMarks (marks1[i], marks2[i], CA1[i], CA2[i]);
 
+    }
+    cout << "Student" << setw(15) << "Marks1" << setw(15) << "Marks2" << setw(15) << "CA_1" << setw(15) << "CA_2" << endl;
+
+    for (int i = 0; i < 5; i++) {
+
+        cout << i + 1 << setw(17) << marks1[i] << setw(15) << marks2[i] << setiosflags(ios::fixed) << setprecision(2) << setw(20) << CA1[i] << setw(15) << CA2[i] << endl;
     }
 
     return 0;
