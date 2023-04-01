@@ -47,13 +47,13 @@ int main()
 }
 float areaOfCircle(Circle c1) {
 
-    return PI * Circle.radius * Circle.radius;
+    return PI * c1.radius * c1.radius;
 }
 float areaOfRectangle(Rectangle r1) {
 
-    return Rectangle.length * Rectangle.width;
+    return r1.length * r1.width;
 }
 float areaOfSquare(Square s1) {
 
-    return Square.length * Square.length;
+    return s1.length * s1.length;
 }
