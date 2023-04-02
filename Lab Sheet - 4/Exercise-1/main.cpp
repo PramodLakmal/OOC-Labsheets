@@ -41,7 +41,7 @@ int main()
     cout << "Enter the radius of the Circle : ";
     cin >> C1.radius;
 
-    cout << "Green area : " << areaOfRectangle(yard) - areaOfRectangle(R1) - areaOfSquare(S1) - areaOfCircle(C1) << endl;
+    cout << "Green area : " << fixed << setprecision(3) << areaOfRectangle(yard) - areaOfRectangle(R1) - areaOfSquare(S1) - areaOfCircle(C1) << endl;
 
     return 0;
 }
